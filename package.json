@@ -1,13 +1,14 @@
 {
   "name": "react-query-mock-data",
+  "version": "1.0.0",
   "module": "index.ts",
   "author": "Mohsen Fallahnejad",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.pinotest.com/m.fallahnejad/faker"
+    "url": "https://github.com/mohsenfallahnjd/react-query-mock-data"
   },
-  "homepage": "https://gitlab.pinotest.com/m.fallahnejad/faker",
+  "homepage": "https://github.com/mohsenfallahnjd/react-query-mock-data",
   "type": "module",
   "devDependencies": {
     "@faker-js/faker": "^9.8.0",
