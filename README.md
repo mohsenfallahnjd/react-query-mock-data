@@ -5,11 +5,11 @@ A powerful and flexible package for generating mock data in React applications u
 ## Installation
 
 ```bash
-npm install @your-scope/faker
+npm install react-query-mock-data
 # or
-yarn add @your-scope/faker
+yarn add react-query-mock-data
 # or
-pnpm add @your-scope/faker
+pnpm add react-query-mock-data
 ```
 
 ## Features
@@ -25,7 +25,7 @@ pnpm add @your-scope/faker
 ## Basic Usage
 
 ```typescript
-import { useMockData, useMockMutation } from '@your-scope/faker';
+import { useMockData, useMockMutation } from 'react-query-mock-data';
 
 // Define your schema
 const userSchema = {
@@ -81,7 +81,7 @@ You can add custom primitive types with full type safety:
 
 ```typescript
 import { en, type Faker as FakerType } from "@faker-js/faker";
-import { useMockData, type PrimitiveType, type FakerConfig } from '@your-scope/faker';
+import { useMockData, type PrimitiveType, type FakerConfig } from 'react-query-mock-data';
 
 // Define your custom types
 type CustomTypes = 'customType1' | 'customType2';
