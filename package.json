@@ -1,6 +1,6 @@
 {
   "name": "react-query-mock-data",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "module": "index.ts",
   "author": "Mohsen Fallahnejad",
   "license": "MIT",
@@ -14,7 +14,8 @@
   "scripts": {
     "clean": "rm -rf dist",
     "build": "npm run clean && tsc",
-    "dev": "bun run index.ts"
+    "dev": "bun run index.ts",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",

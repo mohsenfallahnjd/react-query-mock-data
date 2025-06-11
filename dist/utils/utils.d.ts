@@ -2,7 +2,7 @@ import { Faker, type LocaleDefinition } from "@faker-js/faker";
 export type BasePrimitiveType = "string" | "number" | "boolean" | "date" | "image" | "price" | "uuid" | "name" | "phone" | "email" | "text" | "address" | "url";
 export type PrimitiveType<T extends string = never> = BasePrimitiveType | T;
 export type PrimitiveMap<T extends string = never> = {
-    [K in PrimitiveType<T>]: K extends "number" | "price" ? number : string;
+    [K in PrimitiveType<T>]: K extends "number" | "price" ? number : K extends "boolean" ? boolean : string;
 };
 export type Mutable<T> = {
     -readonly [P in keyof T]: T[P] extends object ? Mutable<T[P]> : T[P];
