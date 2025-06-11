@@ -1,18 +1,31 @@
 {
   "name": "react-query-mock-data",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "module": "index.ts",
   "author": "Mohsen Fallahnejad",
   "license": "MIT",
   "description": "A library for mocking data with React Query",
   "keywords": ["react", "react-query", "mock", "data"],
   "main": "index.ts",
+  "types": "index.d.ts",
+  "bin": {
+    "react-query-mock-data": "./dist/index.js"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc",
+    "dev": "bun run index.ts"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/mohsenfallahnjd/react-query-mock-data"
   },
   "homepage": "https://github.com/mohsenfallahnjd/react-query-mock-data",
   "type": "module",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": ["dist"],
   "devDependencies": {
     "@faker-js/faker": "^9.8.0",
     "@types/bun": "latest"
