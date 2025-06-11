@@ -18,7 +18,7 @@ export type BasePrimitiveType =
 export type PrimitiveType<T extends string = never> = BasePrimitiveType | T;
 
 export type PrimitiveMap<T extends string = never> = {
-  [K in PrimitiveType<T>]: K extends "number" | "price" ? number : string;
+  [K in PrimitiveType<T>]: K extends "number" | "price" ? number : K extends "boolean" ? boolean : string;
 };
 
 export type Mutable<T> = {
