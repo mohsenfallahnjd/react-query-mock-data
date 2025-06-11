@@ -4,6 +4,9 @@
   "module": "index.ts",
   "author": "Mohsen Fallahnejad",
   "license": "MIT",
+  "description": "A library for mocking data with React Query",
+  "keywords": ["react", "react-query", "mock", "data"],
+  "main": "index.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/mohsenfallahnjd/react-query-mock-data"
