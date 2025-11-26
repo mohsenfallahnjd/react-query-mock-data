@@ -1,6 +1,6 @@
 {
   "name": "react-query-mock-data",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "module": "index.ts",
   "author": "Mohsen Fallahnejad",
   "license": "MIT",
